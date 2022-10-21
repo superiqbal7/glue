@@ -44,12 +44,9 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    steps:
-      - task: AzureRmWebAppDeployment@4
-        inputs:
-          ConnectionType: 'AzureRM'
-          appType: 'webAppContainer'
-          WebAppName: 'glue-dev'
-          DockerNamespace: 'gluedev.azurecr.io'
-          DockerRepository: 'superiqbalglue'
-          DockerImageTag: '55'
+    steps: 
+    - task: AzureWebAppContainer@1
+      inputs:
+        azureSubscription: 'Azure subscription 1(3472f254-3b9d-4fd9-9a8e-596bc98e4a45)'
+        appName: 'glue-dev'
+        containers: $(containerRegistry)/$(imageRepository):$(tag)
