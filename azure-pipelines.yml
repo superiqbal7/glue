@@ -48,5 +48,5 @@ stages:
     - task: AzureWebAppContainer@1
       inputs:
         azureSubscription: 'Azure subscription 1(3472f254-3b9d-4fd9-9a8e-596bc98e4a45)'
-        appName: 'glue-dev'
+        appName: 'glue-dev1'
         containers: $(containerRegistry)/$(imageRepository):$(tag)
