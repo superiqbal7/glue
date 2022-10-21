@@ -11,7 +11,7 @@ ENV APP_DB_USER=laraveluser
 ENV APP_DB_PASS=laravelpass
 ENV DB_FILE=bahonbdc_ticket.sql
 
-ENV WEB_SERVER=https://glue-dev.azurewebsites.net
+ENV WEB_SERVER=glue-dev1.azurewebsites.net
 
 ENV GIT_REPO=https://team_cloudboost:ATBBz5Xswgg7WZdcHSy8rqcQMfjP6A5CA97F@bitbucket.org/appincubators/glue.git
 ENV GIT_BRANCH=Master
